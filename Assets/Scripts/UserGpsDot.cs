@@ -9,8 +9,8 @@ public class UserGpsDot : MonoBehaviour
     float avgLocationDelay = 5;
     Coroutine moveCoroutine;
 
-    Text t1;
-    Text t2;
+    public Transform corner1;
+    public Transform corner2;
 
 
     private void Start()
@@ -18,7 +18,6 @@ public class UserGpsDot : MonoBehaviour
         if (!Input.location.isEnabledByUser)
         {
             gameObject.SetActive(false);
-            t1.text = "error";
             return;
         }
 
@@ -48,7 +47,7 @@ public class UserGpsDot : MonoBehaviour
         float t = 0;
         while (t != 1)
         {
-            t = Mathf.MoveTowards(t, 1, Time.deltaTime / 5);
+            t = Mathf.MoveTowards(t, 1, Time.deltaTime / avgLocationDelay);
             transform.position = GeoLocationToVec3(location);
             yield return null;
         }
@@ -60,21 +59,21 @@ public class UserGpsDot : MonoBehaviour
             yield return new WaitForSeconds(1);
 
         if (Input.location.status == LocationServiceStatus.Failed)
-        {
             print("Unable to determine device location");
-            t1.text = "Unable to determine device location";
-        }
     }
 
     Vector3 GeoLocationToVec3(LocationInfo location)
     {
-        return new Vector3();
-        Vector2 scale = new Vector2(
-            51.763653f - 51.758048f,
-            19.416828f - 19.408652f);
+        Vector2 high = new Vector3(51.763975f, 19.419389f);
+        Vector2 low = new Vector2(51.7577306f, 19.406842f);
+        Vector2 scale = high - low;
 
-        float lattitude = location.latitude - 51.758048f;
-        float lattitudeNormalized = lattitude;
-        
+        float lattitudeNormalized = (location.latitude - low.x) / scale.x;
+        float longitudeNormalized = (location.longitude - low.y) / scale.y;
+
+        return new Vector3(
+            Mathf.LerpUnclamped(corner2.transform.position.x, corner1.transform.position.x, longitudeNormalized),
+            0,
+            Mathf.LerpUnclamped(corner2.transform.position.z, corner1.transform.position.z, lattitudeNormalized));
     }
 }

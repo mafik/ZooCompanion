@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class PointerController : MonoBehaviour
 {
     public UIAnimalMain panelToOpen;
+    public ViewCenterer centerer;
 
     Vector2 cursorDownPos;
 
@@ -30,6 +31,7 @@ public class PointerController : MonoBehaviour
         if (pen)
         {
             panelToOpen.Open(pen);
+            centerer.Focus(pen);
         }
     }
 
