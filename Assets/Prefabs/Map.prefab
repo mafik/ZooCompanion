@@ -631,7 +631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 68218909415322487}
   rawAnimalData: {fileID: 4900000, guid: b0e1a19366b9c83c7aaedaea26973d1e, type: 3}
-  rawQuestionData: {fileID: 0}
+  rawQuestionData: {fileID: 4900000, guid: ecd10a8af049260419b1fb60dcb2974b, type: 3}
   sprite: {fileID: 21300000, guid: 8f4ee02242db01747a5695f06c03981c, type: 3}
   map: {fileID: 21300000, guid: 6737a52a241e4d045ac1cae861e4aeb7, type: 3}
   lr: {fileID: 1159419123077232436}
@@ -1909,7 +1909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 2920281979132720844}
   rawAnimalData: {fileID: 4900000, guid: 57c2d4238d358e1ebba790419e8b3423, type: 3}
-  rawQuestionData: {fileID: 4900000, guid: 2890eb8fa99da6745bcf48ce1f65a106, type: 3}
+  rawQuestionData: {fileID: 4900000, guid: 581bca70c2359b845b544025ff87a36c, type: 3}
   sprite: {fileID: 21300000, guid: 48481f56eb7f5d24683ee5e716648ade, type: 3}
   map: {fileID: 21300000, guid: 18ebe43c77a9e4446bf3376a913542f2, type: 3}
   lr: {fileID: 1339120070}
@@ -3574,7 +3574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 3111477603460390411}
   rawAnimalData: {fileID: 4900000, guid: 43985f99afb63434a8477e2d2b51017c, type: 3}
-  rawQuestionData: {fileID: 0}
+  rawQuestionData: {fileID: 4900000, guid: c8bfedc50b5ed9b4e94f1252f742361d, type: 3}
   sprite: {fileID: 21300000, guid: 6fe0227b64936134ea48bec6e8cb7700, type: 3}
   map: {fileID: 21300000, guid: 89e38dedf1d1f694caf6bee6aaba157f, type: 3}
   lr: {fileID: 2773628246521648164}
@@ -3633,7 +3633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 8125164956069876312}
   rawAnimalData: {fileID: 4900000, guid: 06c8d6a9bcd3544338be0a293e198ad5, type: 3}
-  rawQuestionData: {fileID: 0}
+  rawQuestionData: {fileID: 4900000, guid: dbf82b2c5cb6c4645ad0ca7bc0a9ff09, type: 3}
   sprite: {fileID: 21300000, guid: 58400e099234ed94fab1396565d75652, type: 3}
   map: {fileID: 21300000, guid: 030a588172ebed44cbed71bf876b7c5e, type: 3}
   lr: {fileID: 2465539029454006008}
@@ -4171,7 +4171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 6675804071493887874}
   rawAnimalData: {fileID: 4900000, guid: 47b014ad3cf8e1e3ba2e5a8e6cb6b5c3, type: 3}
-  rawQuestionData: {fileID: 0}
+  rawQuestionData: {fileID: 4900000, guid: a5cfc252caf8036448d65afa71ab47fe, type: 3}
   sprite: {fileID: 21300000, guid: 09c5ad33b1d86ef4f87008f85c905af3, type: 3}
   map: {fileID: 21300000, guid: cb1a23a441ce0be4c96aa663ce2c8156, type: 3}
   lr: {fileID: 1227658227987915434}
@@ -5647,7 +5647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 3819450282225745639}
   rawAnimalData: {fileID: 4900000, guid: 09ce08369c6f756b6a63d771792bdb2c, type: 3}
-  rawQuestionData: {fileID: 0}
+  rawQuestionData: {fileID: 4900000, guid: ce4ca9d9df95f684ab7896b332c7e06a, type: 3}
   sprite: {fileID: 21300000, guid: d1fa813c08049774fbd59ed73b25d3a5, type: 3}
   map: {fileID: 21300000, guid: 8b3829e13ec18704caa0d28e7a44c057, type: 3}
   lr: {fileID: 5717446977896948657}
