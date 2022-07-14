@@ -2114,6 +2114,9 @@ MonoBehaviour:
   - {fileID: 1298091780919488538}
   - {fileID: 8798764353980132610}
   quizSection: {fileID: 1130169701342689634}
+  audioSource: {fileID: 0}
+  okClip: {fileID: 8300000, guid: 5c665b6f22066b34e914a963b53d53b5, type: 3}
+  badClip: {fileID: 8300000, guid: a22ab73c06360b14a9203de7ac2f7aa2, type: 3}
   okColor: {r: 0.5686275, g: 1, b: 0.49803922, a: 1}
   badColor: {r: 1, g: 0.63529414, b: 0.49411765, a: 1}
 --- !u!114 &6784558207731264101

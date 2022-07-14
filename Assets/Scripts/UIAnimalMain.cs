@@ -104,8 +104,6 @@ public class UIAnimalMain : MonoBehaviour
 
     void OnQuizToggleToggled(bool newValue)
     {
-        lectorSource.clip = winAudioClip;
-        lectorSource.Play();
         mainSection.SetActive(false);
         quizSection.Open(pen.question);
     }

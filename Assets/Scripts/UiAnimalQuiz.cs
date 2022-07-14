@@ -11,6 +11,9 @@ public class UiAnimalQuiz : MonoBehaviour
     public Button[] answerBtns;
     public GameObject quizSection;
     public Action<bool> onClose;
+    public AudioSource audioSource;
+    public AudioClip okClip;
+    public AudioClip badClip;
 
     Question curQuestion;
 
@@ -57,6 +60,9 @@ public class UiAnimalQuiz : MonoBehaviour
 
     void SpawnFeedback(int btnId, bool correct)
     {
+        audioSource.clip = correct ? okClip : badClip;
+        audioSource.Play();
+
         StartCoroutine(IColorBtn(
             answerBtns[btnId].GetComponent<Image>(),
             correct? okColor : badColor));
