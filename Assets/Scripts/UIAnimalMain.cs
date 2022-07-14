@@ -18,6 +18,7 @@ public class UIAnimalMain : MonoBehaviour
     public AudioClip winAudioClip;
     public string donateAddress;
     public PanelAnims anims;
+    public Followers followers;
 
     AnimalPen pen;
     AnimalContext context => pen.context;
@@ -68,8 +69,7 @@ public class UIAnimalMain : MonoBehaviour
 
     void OnVisitedToggleToggled(bool newValue)
     {
-        lectorSource.clip = winAudioClip;
-        lectorSource.Play();
-        // logic to do
+        followers.AddFollower(pen.animalMesh);
+        Close();
     }
 }
