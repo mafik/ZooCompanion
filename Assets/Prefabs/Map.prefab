@@ -534,8 +534,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 68218909415322487}
   rawAnimalData: {fileID: 4900000, guid: b0e1a19366b9c83c7aaedaea26973d1e, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 8f4ee02242db01747a5695f06c03981c, type: 3}
+  map: {fileID: 21300000, guid: 6737a52a241e4d045ac1cae861e4aeb7, type: 3}
   lr: {fileID: 1159419123077232436}
   animalMesh: {fileID: 9113011312994993350}
   voiceClip: {fileID: 8300000, guid: e99941d105c72e448bb94b45eed09256, type: 3}
@@ -2136,8 +2136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 9170572706147024468}
   rawAnimalData: {fileID: 4900000, guid: 518748130aee915359d802967af8c4b2, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 06162d3ac9e0d354680e85ca42913d1c, type: 3}
+  map: {fileID: 21300000, guid: 5507eaec8167e894fbfefec8e41f6d4f, type: 3}
   lr: {fileID: 4515419288779210682}
   animalMesh: {fileID: 2920281978103564400}
   voiceClip: {fileID: 8300000, guid: 54555566d2015b444a10c8514f422043, type: 3}
@@ -2497,8 +2497,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 3847244602721853791}
   rawAnimalData: {fileID: 4900000, guid: 519c0d802c4302fa39b091e6b977b741, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 930cb982d3825124da270f3862010f7f, type: 3}
+  map: {fileID: 21300000, guid: 104a9ccbed37b1244894cb11f77f5402, type: 3}
   lr: {fileID: 1205564113822793586}
   animalMesh: {fileID: 2906558335161330994}
   voiceClip: {fileID: 8300000, guid: a004041af83bc544a94f38245a2714bd, type: 3}
@@ -3034,8 +3034,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 3111477603460390411}
   rawAnimalData: {fileID: 4900000, guid: 43985f99afb63434a8477e2d2b51017c, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 6fe0227b64936134ea48bec6e8cb7700, type: 3}
+  map: {fileID: 21300000, guid: 89e38dedf1d1f694caf6bee6aaba157f, type: 3}
   lr: {fileID: 2773628246521648164}
   animalMesh: {fileID: 5812070748479300825}
   voiceClip: {fileID: 8300000, guid: dba6a06be33c2ee4d9e5f1887d9e35f6, type: 3}
@@ -3092,8 +3092,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 8125164956069876312}
   rawAnimalData: {fileID: 4900000, guid: 06c8d6a9bcd3544338be0a293e198ad5, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 58400e099234ed94fab1396565d75652, type: 3}
+  map: {fileID: 21300000, guid: 030a588172ebed44cbed71bf876b7c5e, type: 3}
   lr: {fileID: 2465539029454006008}
   animalMesh: {fileID: 2573772649460142663}
   voiceClip: {fileID: 8300000, guid: bca1a7af58d09f04399ecb64d7f1807e, type: 3}
@@ -3629,8 +3629,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 6675804071493887874}
   rawAnimalData: {fileID: 4900000, guid: 47b014ad3cf8e1e3ba2e5a8e6cb6b5c3, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 09c5ad33b1d86ef4f87008f85c905af3, type: 3}
+  map: {fileID: 21300000, guid: cb1a23a441ce0be4c96aa663ce2c8156, type: 3}
   lr: {fileID: 1227658227987915434}
   animalMesh: {fileID: 8843892424859821477}
   voiceClip: {fileID: 8300000, guid: 99c2be08e1e26254d84d91f649aabcb6, type: 3}
@@ -4274,8 +4274,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 4550749830369328113}
   rawAnimalData: {fileID: 4900000, guid: 91bd9eba97bcaea9a95e4d931a4a39e3, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 0fb4684486dabf642965f07ffa535e75, type: 3}
+  map: {fileID: 21300000, guid: cf22ecfd93d913f4aa7e9ce8349a7bb7, type: 3}
   lr: {fileID: 3687592785658910300}
   animalMesh: {fileID: 7060212316309850385}
   voiceClip: {fileID: 8300000, guid: 87a86890950472f42bb61b736fe46a07, type: 3}
@@ -4671,8 +4671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 3696212974217684276}
   rawAnimalData: {fileID: 4900000, guid: c322d36ac8965dfa690b1e1573997ee7, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: f73ce06f502b4ef479c7d82163ec7e03, type: 3}
+  map: {fileID: 21300000, guid: 046aae6432cbda64c8e7be1954af8385, type: 3}
   lr: {fileID: 8393338166670195088}
   animalMesh: {fileID: 2970894831121994753}
   voiceClip: {fileID: 8300000, guid: 1f44101a06288f54dbfa26862da7bd7f, type: 3}
@@ -4870,8 +4870,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 6626475136708351184}
   rawAnimalData: {fileID: 4900000, guid: 05416396d3cf3eac8bd96659d0bfdcab, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 612c5f37db5fa22479358f52c3524d71, type: 3}
+  map: {fileID: 21300000, guid: d2affa3661e5ec94884e9c0bfd422975, type: 3}
   lr: {fileID: 7378633802330437084}
   animalMesh: {fileID: 8716148008875588786}
   voiceClip: {fileID: 8300000, guid: f3a5b816dc33213459a23cd476d3d8dd, type: 3}
@@ -5030,8 +5030,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 3819450282225745639}
   rawAnimalData: {fileID: 4900000, guid: 09ce08369c6f756b6a63d771792bdb2c, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: d1fa813c08049774fbd59ed73b25d3a5, type: 3}
+  map: {fileID: 21300000, guid: 8b3829e13ec18704caa0d28e7a44c057, type: 3}
   lr: {fileID: 5717446977896948657}
   animalMesh: {fileID: 5169669620701648599}
   voiceClip: {fileID: 8300000, guid: 7c452835fb987dd4f9797678a1340afa, type: 3}
@@ -5228,8 +5228,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 1254875696243929538}
   rawAnimalData: {fileID: 4900000, guid: dea2f011186e27197b7e67cc841f0fd7, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 0557d7921784ef04884c78f11beb7348, type: 3}
+  map: {fileID: 21300000, guid: 343c357f638400b4faec51f481b10f4b, type: 3}
   lr: {fileID: 4961715383531758550}
   animalMesh: {fileID: 4546916525471429620}
   voiceClip: {fileID: 8300000, guid: 5d6301bc2cbda94478a3f155d6b8e8de, type: 3}
@@ -5764,8 +5764,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 2989762760426510222}
   rawAnimalData: {fileID: 4900000, guid: c7ce2edcbdcfd5b0ca7665567068a100, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 3c03c47230c016e48868419f5e06d61d, type: 3}
+  map: {fileID: 21300000, guid: 04bab71678fcb2440a31a738df5da8fc, type: 3}
   lr: {fileID: 7545163295723043311}
   animalMesh: {fileID: 4299397252326984500}
   voiceClip: {fileID: 8300000, guid: b5452aa30398f75418f044e826292a20, type: 3}
@@ -6024,8 +6024,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 8725943568463534457}
   rawAnimalData: {fileID: 4900000, guid: 971874bdb682a3713a7ec59850ce94a2, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: df0d67377e7f4f44c839e678536a3bac, type: 3}
+  map: {fileID: 21300000, guid: c6665caf578c41347b342cf18816fa39, type: 3}
   lr: {fileID: 762020712927656138}
   animalMesh: {fileID: 6214359163809366290}
   voiceClip: {fileID: 8300000, guid: d341f754589001e4fb0dc81b83d1c4c6, type: 3}
@@ -6284,8 +6284,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelOpenPosition: {fileID: 536503474502974947}
   rawAnimalData: {fileID: 4900000, guid: 29dd39ee4173934228f3843e6bd7aa40, type: 3}
-  sprite: {fileID: 0}
-  map: {fileID: 0}
+  sprite: {fileID: 21300000, guid: a1d299d0d35bdc44cad924b86097bb73, type: 3}
+  map: {fileID: 21300000, guid: f574fb1a883eb1440bfc5c0d23d1e721, type: 3}
   lr: {fileID: 366474253081439788}
   animalMesh: {fileID: 6424782381444189956}
   voiceClip: {fileID: 8300000, guid: 3209883cf2908314a8b810f210c5bc4b, type: 3}
