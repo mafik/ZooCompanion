@@ -23,8 +23,8 @@ public class ViewCenterer : MonoBehaviour
         while(t != 1)
         {
             t = Mathf.MoveTowards(t, 1, Time.deltaTime * 2);
-            scrollRect.horizontalNormalizedPosition = Mathf.Lerp(startHori, pos.x, SmoothLerp(t));
-            scrollRect.verticalNormalizedPosition = Mathf.Lerp(startVert, pos.y, SmoothLerp(t));
+            scrollRect.horizontalNormalizedPosition = Mathf.Lerp(startHori, pos.x, Tween.InOut(t));
+            scrollRect.verticalNormalizedPosition = Mathf.Lerp(startVert, pos.y, Tween.InOut(t));
             yield return null;
         }
     }
@@ -32,13 +32,8 @@ public class ViewCenterer : MonoBehaviour
     Vector2 GetNormalizedPos(Vector3 pos)
     {
         Vector3 scale = maxPoint.position - minPoint.position;
-        Vector3 posNormalized = pos - minPoint.position;
+        Vector3 posRelative = pos - minPoint.position;
 
-        return new Vector2(posNormalized.x / scale.x, posNormalized.z / scale.z);
-    }
-
-    float SmoothLerp(float t)
-    {
-        return 3 * t * t - 2 * t * t * t;
+        return new Vector2(posRelative.x / scale.x, posRelative.z / scale.z);
     }
 }
