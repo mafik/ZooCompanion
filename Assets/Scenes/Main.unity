@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -509,6 +509,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef8325b2f5abea478390b06e98157e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1877396091 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5344056149650886876, guid: 2f06c942aa6534b439bf0984effad0f3, type: 3}
+  m_PrefabInstance: {fileID: 6751001081971410519}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2083969829
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +725,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1603140063}
     m_Modifications:
+    - target: {fileID: 4748184312537394361, guid: a87acb10fc98a094987b648341b772b2, type: 3}
+      propertyPath: closeAudio
+      value: 
+      objectReference: {fileID: 1877396091}
     - target: {fileID: 4748184313717765968, guid: a87acb10fc98a094987b648341b772b2, type: 3}
       propertyPath: m_Name
       value: Animal Panel
@@ -817,6 +826,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6460771512394840594, guid: 2f06c942aa6534b439bf0984effad0f3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6751001081248925284, guid: 2f06c942aa6534b439bf0984effad0f3, type: 3}
       propertyPath: panelToOpen
       value: 
