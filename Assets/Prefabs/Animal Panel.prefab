@@ -1539,6 +1539,8 @@ MonoBehaviour:
   description: {fileID: 4748184313680823892}
   outsideLinkBtn: {fileID: 4748184312501542218}
   donateBtn: {fileID: 4748184312655319774}
+  lectorBtn: {fileID: 4748184313153029164}
+  lectorSource: {fileID: 0}
   donateAddress: https://orientarium.lodz.pl/adopcje/
 --- !u!1 &4748184313840589859
 GameObject:
