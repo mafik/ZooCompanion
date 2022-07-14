@@ -6,7 +6,9 @@ public class AnimalPen : MonoBehaviour
     public Transform panelOpenPosition;
     public TextAsset rawAnimalData;
     public Sprite sprite;
-    public Toggle toggle;
+    public LineRenderer lr;
+    public GameObject animalMesh;
+    public AudioClip voiceClip;
 
     [HideInInspector]
     public AnimalContext context;

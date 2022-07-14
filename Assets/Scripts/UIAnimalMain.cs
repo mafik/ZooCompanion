@@ -13,6 +13,8 @@ public class UIAnimalMain : MonoBehaviour
     public Text description;
     public Button outsideLinkBtn;
     public Button donateBtn;
+    public Button lectorBtn;
+    public AudioSource lectorSource;
     public string donateAddress;
 
     AnimalPen pen;
@@ -22,24 +24,23 @@ public class UIAnimalMain : MonoBehaviour
     {
         outsideLinkBtn.onClick.AddListener(OutsideLinkBtnClicked);
         donateBtn.onClick.AddListener(DonateBtnClicked);
+        lectorBtn.onClick.AddListener(LectorBtnClicked);
         visitedToggle.onValueChanged.AddListener(OnVisitedToggleToggled);
+    }
+
+    private void OnDisable()
+    {
+        lectorSource.Stop();
     }
 
     public void Open(AnimalPen pen)
     {
-        if (this.pen)
-        {
-            this.pen.toggle.onValueChanged.RemoveListener(OnPenToggleToggled);
-        }
-
         this.pen = pen;
         animalPicture.sprite = pen.sprite;
         endangermentImage.sprite = context.endangermentSprite;
         animalName.text = context.name;
         animalNameLatin.text = context.latinName;
         description.text = context.description;
-        pen.toggle.onValueChanged.AddListener(OnPenToggleToggled);
-        visitedToggle.SetIsOnWithoutNotify(pen.toggle.isOn);
 
         transform.position = pen.panelOpenPosition.transform.position;
         transform.parent = pen.panelOpenPosition;
@@ -56,13 +57,14 @@ public class UIAnimalMain : MonoBehaviour
         Application.OpenURL(donateAddress);
     }
 
-    void OnVisitedToggleToggled(bool newValue)
+    void LectorBtnClicked()
     {
-        pen.toggle.SetIsOnWithoutNotify(newValue);
+        lectorSource.clip = pen.voiceClip;
+        lectorSource.Play();
     }
 
-    void OnPenToggleToggled(bool newValue)
+    void OnVisitedToggleToggled(bool newValue)
     {
-        visitedToggle.SetIsOnWithoutNotify(newValue);
+        // logic to do
     }
 }
