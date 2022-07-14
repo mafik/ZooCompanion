@@ -733,6 +733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 4748184313717765968, guid: a87acb10fc98a094987b648341b772b2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4748184313717765969, guid: a87acb10fc98a094987b648341b772b2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

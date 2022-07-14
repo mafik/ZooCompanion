@@ -1770,6 +1770,7 @@ MonoBehaviour:
   donateBtn: {fileID: 4748184312655319774}
   lectorBtn: {fileID: 4748184313153029164}
   lectorSource: {fileID: 0}
+  winAudioClip: {fileID: 8300000, guid: 5c665b6f22066b34e914a963b53d53b5, type: 3}
   donateAddress: https://orientarium.lodz.pl/adopcje/
   anims: {fileID: 4890710388644377201}
 --- !u!114 &6784558207731264101

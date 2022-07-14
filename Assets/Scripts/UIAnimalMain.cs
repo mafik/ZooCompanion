@@ -15,6 +15,7 @@ public class UIAnimalMain : MonoBehaviour
     public Button donateBtn;
     public Button lectorBtn;
     public AudioSource lectorSource;
+    public AudioClip winAudioClip;
     public string donateAddress;
     public PanelAnims anims;
 
@@ -67,6 +68,8 @@ public class UIAnimalMain : MonoBehaviour
 
     void OnVisitedToggleToggled(bool newValue)
     {
+        lectorSource.clip = winAudioClip;
+        lectorSource.Play();
         // logic to do
     }
 }
