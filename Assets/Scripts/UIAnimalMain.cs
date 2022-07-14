@@ -16,6 +16,7 @@ public class UIAnimalMain : MonoBehaviour
     public Button lectorBtn;
     public AudioSource lectorSource;
     public string donateAddress;
+    public PanelAnims anims;
 
     AnimalPen pen;
     AnimalContext context => pen.context;
@@ -26,11 +27,6 @@ public class UIAnimalMain : MonoBehaviour
         donateBtn.onClick.AddListener(DonateBtnClicked);
         lectorBtn.onClick.AddListener(LectorBtnClicked);
         visitedToggle.onValueChanged.AddListener(OnVisitedToggleToggled);
-    }
-
-    private void OnDisable()
-    {
-        lectorSource.Stop();
     }
 
     public void Open(AnimalPen pen)
@@ -44,7 +40,13 @@ public class UIAnimalMain : MonoBehaviour
 
         transform.position = pen.panelOpenPosition.transform.position;
         transform.SetParent(pen.panelOpenPosition);
-        gameObject.SetActive(true);
+        anims.Open();
+    }
+
+    public void Close()
+    {
+        anims.Close();
+        lectorSource.Stop();
     }
 
     void OutsideLinkBtnClicked()
