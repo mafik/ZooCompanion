@@ -43,7 +43,7 @@ public class UIAnimalMain : MonoBehaviour
         description.text = context.description;
 
         transform.position = pen.panelOpenPosition.transform.position;
-        transform.parent = pen.panelOpenPosition;
+        transform.SetParent(pen.panelOpenPosition);
         gameObject.SetActive(true);
     }
 
