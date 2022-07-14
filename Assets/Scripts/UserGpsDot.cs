@@ -12,7 +12,6 @@ public class UserGpsDot : MonoBehaviour
     public Transform corner1;
     public Transform corner2;
 
-
     private void Start()
     {
         if (!Input.location.isEnabledByUser)

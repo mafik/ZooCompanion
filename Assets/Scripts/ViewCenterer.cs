@@ -9,6 +9,34 @@ public class ViewCenterer : MonoBehaviour
     public Transform minPoint;
     public Transform maxPoint;
 
+    public Transform followTarget;
+    public UIAnimalMain mainUi;
+
+    bool canFollow;
+    bool animating;
+
+    private void Update()
+    {
+        if (mainUi.gameObject.activeInHierarchy)
+        {
+            canFollow = false;
+            return;
+        }
+
+        if (!followTarget.gameObject.activeInHierarchy)
+            return;
+
+        Vector2 userPos = GetNormalizedPos(followTarget.position);
+        if (!canFollow && !animating)
+            StartCoroutine(AnimateToPos(userPos));
+
+        if (canFollow)
+        {
+            scrollRect.horizontalNormalizedPosition = userPos.x;
+            scrollRect.verticalNormalizedPosition = userPos.y;
+        }   
+    }
+
     public void Focus(AnimalPen pen)
     {
         StopAllCoroutines();
@@ -17,6 +45,7 @@ public class ViewCenterer : MonoBehaviour
 
     IEnumerator AnimateToPos(Vector2 pos)
     {
+        animating = true;
         float startHori = scrollRect.horizontalNormalizedPosition;
         float startVert = scrollRect.verticalNormalizedPosition;
         float t = 0;
@@ -27,9 +56,12 @@ public class ViewCenterer : MonoBehaviour
             scrollRect.verticalNormalizedPosition = Mathf.Lerp(startVert, pos.y, Tween.InOut(t));
             yield return null;
         }
+
+        animating = false;
+        canFollow = true;
     }
 
-    Vector2 GetNormalizedPos(Vector3 pos)
+    public Vector2 GetNormalizedPos(Vector3 pos)
     {
         Vector3 scale = maxPoint.position - minPoint.position;
         Vector3 posRelative = pos - minPoint.position;
