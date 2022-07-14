@@ -867,7 +867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce82bb4bc970fd0419f28d09c08a5bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objToClose: {fileID: 4748184313717765968}
+  objToClose: {fileID: 4748184313717765980}
   closeAudio: {fileID: 0}
 --- !u!1 &4748184312655319772
 GameObject:
@@ -1669,6 +1669,8 @@ GameObject:
   - component: {fileID: 4748184313717765970}
   - component: {fileID: 4748184313717765980}
   - component: {fileID: 6784558207731264101}
+  - component: {fileID: 4890710388644377201}
+  - component: {fileID: 8780753872009656539}
   m_Layer: 5
   m_Name: Animal Panel
   m_TagString: Untagged
@@ -1769,6 +1771,7 @@ MonoBehaviour:
   lectorBtn: {fileID: 4748184313153029164}
   lectorSource: {fileID: 0}
   donateAddress: https://orientarium.lodz.pl/adopcje/
+  anims: {fileID: 4890710388644377201}
 --- !u!114 &6784558207731264101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1786,6 +1789,32 @@ MonoBehaviour:
   - {fileID: 3823039852961034827}
   - {fileID: 4686145150913778749}
   - {fileID: 6791206755897373524}
+  targetPanel: {fileID: 4748184313717765980}
+--- !u!114 &4890710388644377201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4748184313717765968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b975e5356c43940907a14a9c44e7ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 8780753872009656539}
+--- !u!225 &8780753872009656539
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4748184313717765968}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &4748184313840589859
 GameObject:
   m_ObjectHideFlags: 0

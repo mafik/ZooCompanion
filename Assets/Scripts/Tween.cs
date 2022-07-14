@@ -11,11 +11,11 @@ public static class Tween
 
     static public float In(float t)
     {
-        return t * t;
+        return t * t * t * t;
     }
 
     static public float Out(float t)
     {
-        return Mathf.Sqrt(t);
+        return Mathf.Sqrt(Mathf.Sqrt(t));
     }
 }

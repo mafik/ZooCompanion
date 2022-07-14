@@ -5,12 +5,13 @@ using UnityEngine;
 public class AutoClose : MonoBehaviour
 {
     public Transform[] objsToTest;
+    public UIAnimalMain targetPanel;
 
     float cooldown;
 
     private void OnEnable()
     {
-        cooldown = Time.time + 0.5f;
+        cooldown = Time.time + 1f;
     }
 
     private void Update()
@@ -38,6 +39,7 @@ public class AutoClose : MonoBehaviour
 
     void Hide()
     {
-        gameObject.SetActive(false);
+        targetPanel.Close();
+        cooldown = Time.time + 1f;
     }
 }

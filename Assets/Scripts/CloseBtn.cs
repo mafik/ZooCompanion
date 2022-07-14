@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CloseBtn : MonoBehaviour
 {
-    public GameObject objToClose;
+    public UIAnimalMain objToClose;
     public AudioSource closeAudio;
 
     public void Close()
     {
-        objToClose.SetActive(false);
+        objToClose.Close();
         closeAudio.Play();
     }
 }
