@@ -89,6 +89,8 @@ public class UIAnimalMain : MonoBehaviour
 
     void OnVisitedToggleToggled(bool newValue)
     {
+        lectorSource.clip = winAudioClip;
+        lectorSource.Play();
         followers.AddFollower(pen.animalMesh);
         Close();
     }
