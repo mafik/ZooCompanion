@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,5 +23,10 @@ public class AnimalPen : MonoBehaviour
     {
         context = AnimalCsv.ParseAnimal(rawAnimalData);
         question = AnimalCsv.ParseQuestion(rawQuestionData);
+    }
+
+    public void ColorPen()
+    {
+        lr.startColor = lr.endColor = new Color(0.3545746f, 0.9056604f, 0.372496f);
     }
 }

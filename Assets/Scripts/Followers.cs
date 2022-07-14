@@ -21,7 +21,8 @@ public class Followers : MonoBehaviour
 
     public void AddFollower(GameObject follower)
     {
-        if (followers.Contains(follower))
+        if (followers.Contains(follower)||
+            !gameObject.activeInHierarchy)
             return;
 
         StartCoroutine(ScaleFollower(follower));

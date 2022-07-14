@@ -97,6 +97,7 @@ public class UIAnimalMain : MonoBehaviour
 
         if (success)
         {
+            pen.ColorPen();
             followers.AddFollower(pen.animalMesh);
             Close();
         }
