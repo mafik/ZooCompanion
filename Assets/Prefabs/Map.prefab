@@ -538,7 +538,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 1159419123077232436}
   animalMesh: {fileID: 9113011312994993350}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: e99941d105c72e448bb94b45eed09256, type: 3}
 --- !u!1 &1632654254234504245
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,7 +2140,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 4515419288779210682}
   animalMesh: {fileID: 2920281978103564400}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 54555566d2015b444a10c8514f422043, type: 3}
 --- !u!1 &3728487949508266589
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,7 +2501,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 1205564113822793586}
   animalMesh: {fileID: 2906558335161330994}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: a004041af83bc544a94f38245a2714bd, type: 3}
 --- !u!1 &4222970192315837608
 GameObject:
   m_ObjectHideFlags: 0
@@ -3038,7 +3038,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 2773628246521648164}
   animalMesh: {fileID: 5812070748479300825}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: dba6a06be33c2ee4d9e5f1887d9e35f6, type: 3}
 --- !u!1 &5128418812910395372
 GameObject:
   m_ObjectHideFlags: 0
@@ -3096,7 +3096,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 2465539029454006008}
   animalMesh: {fileID: 2573772649460142663}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: bca1a7af58d09f04399ecb64d7f1807e, type: 3}
 --- !u!1 &5169669620701648599
 GameObject:
   m_ObjectHideFlags: 0
@@ -3633,7 +3633,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 1227658227987915434}
   animalMesh: {fileID: 8843892424859821477}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 99c2be08e1e26254d84d91f649aabcb6, type: 3}
 --- !u!1 &5613612535096590189
 GameObject:
   m_ObjectHideFlags: 0
@@ -4278,7 +4278,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 3687592785658910300}
   animalMesh: {fileID: 7060212316309850385}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 87a86890950472f42bb61b736fe46a07, type: 3}
 --- !u!1 &6424782381444189956
 GameObject:
   m_ObjectHideFlags: 0
@@ -4675,7 +4675,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 8393338166670195088}
   animalMesh: {fileID: 2970894831121994753}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 1f44101a06288f54dbfa26862da7bd7f, type: 3}
 --- !u!1 &6891974385078860062
 GameObject:
   m_ObjectHideFlags: 0
@@ -4874,7 +4874,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 7378633802330437084}
   animalMesh: {fileID: 8716148008875588786}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: f3a5b816dc33213459a23cd476d3d8dd, type: 3}
 --- !u!1 &7060212316309850385
 GameObject:
   m_ObjectHideFlags: 0
@@ -5034,7 +5034,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 5717446977896948657}
   animalMesh: {fileID: 5169669620701648599}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7c452835fb987dd4f9797678a1340afa, type: 3}
 --- !u!1 &7537695743057725866
 GameObject:
   m_ObjectHideFlags: 0
@@ -5232,7 +5232,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 4961715383531758550}
   animalMesh: {fileID: 4546916525471429620}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 5d6301bc2cbda94478a3f155d6b8e8de, type: 3}
 --- !u!1 &8325878502170278566
 GameObject:
   m_ObjectHideFlags: 0
@@ -5768,7 +5768,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 7545163295723043311}
   animalMesh: {fileID: 4299397252326984500}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: b5452aa30398f75418f044e826292a20, type: 3}
 --- !u!1 &8716148008875588786
 GameObject:
   m_ObjectHideFlags: 0
@@ -6028,7 +6028,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 762020712927656138}
   animalMesh: {fileID: 6214359163809366290}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: d341f754589001e4fb0dc81b83d1c4c6, type: 3}
 --- !u!1 &9113011312994993350
 GameObject:
   m_ObjectHideFlags: 0
@@ -6288,7 +6288,7 @@ MonoBehaviour:
   map: {fileID: 0}
   lr: {fileID: 366474253081439788}
   animalMesh: {fileID: 6424782381444189956}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 3209883cf2908314a8b810f210c5bc4b, type: 3}
 --- !u!1001 &2920281977677371596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6739,15 +6739,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91728559cbe8ba44a9f9cc1591f414d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.33757827
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91728559cbe8ba44a9f9cc1591f414d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.14119227
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91728559cbe8ba44a9f9cc1591f414d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0076750307
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91728559cbe8ba44a9f9cc1591f414d2, type: 3}
       propertyPath: m_LocalRotation.w
