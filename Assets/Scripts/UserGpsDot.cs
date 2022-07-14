@@ -44,10 +44,12 @@ public class UserGpsDot : MonoBehaviour
     IEnumerator MoveToNewPos(LocationInfo location)
     {
         float t = 0;
+        Vector3 newPos = GeoLocationToVec3(location);
+        Vector3 oldPos = transform.position;
         while (t != 1)
         {
             t = Mathf.MoveTowards(t, 1, Time.deltaTime / avgLocationDelay);
-            transform.position = GeoLocationToVec3(location);
+            transform.position = Vector3.Lerp(oldPos, newPos, t);
             yield return null;
         }
     }

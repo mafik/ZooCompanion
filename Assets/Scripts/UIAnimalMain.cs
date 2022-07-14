@@ -49,7 +49,7 @@ public class UIAnimalMain : MonoBehaviour
         {
             Vector3 target = followers.center.position;
             Vector3 follower = pen.animalMesh.transform.position;
-            ok = Vector3.Distance(target, follower) < 1.5f;
+            ok = Vector3.Distance(target, follower) < 1.0f;
         }
 
         visitedToggle.interactable = ok;

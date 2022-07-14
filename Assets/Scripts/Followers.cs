@@ -39,11 +39,15 @@ public class Followers : MonoBehaviour
             new Vector3(0, 0, Mathf.Cos(phase) * 0.5f);
 
         Vector3 nextPos = Vector3.MoveTowards(follower.transform.position, desiredPos, Time.deltaTime * 0.5f);
-        Vector2 localPos = new Vector2(follower.transform.localPosition.x, follower.transform.localPosition.z);
         nextPos.y = desiredPos.y;
 
-        float vertOffset = Mathf.PerlinNoise(localPos.x * 0.05f, localPos.y * 0.05f) * 0.2f;
-        float sideRot = Mathf.Sin(timer * 10) * 100 * vertOffset;
+        float vertOffset = (phase * 2) % 1;
+        vertOffset = (vertOffset - vertOffset * vertOffset) * 0.7f;
+
+        float sideRot = Mathf.Sin(timer * 8) * 100 * vertOffset;
+
+        if (follower.name == "Kangaroo")
+            vertOffset *= 2.5f;
 
         nextPos.y += vertOffset;
 
