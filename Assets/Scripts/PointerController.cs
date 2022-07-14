@@ -7,6 +7,7 @@ public class PointerController : MonoBehaviour
 {
     public UIAnimalMain panelToOpen;
     public ViewCenterer centerer;
+    public AudioSource menuOpenSound;
 
     Vector2 cursorDownPos;
 
@@ -32,6 +33,7 @@ public class PointerController : MonoBehaviour
         {
             panelToOpen.Open(pen);
             centerer.Focus(pen);
+            menuOpenSound.Play();
         }
     }
 
