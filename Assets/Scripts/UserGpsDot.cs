@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Android;
 
 public class UserGpsDot : MonoBehaviour
 {
@@ -14,18 +14,15 @@ public class UserGpsDot : MonoBehaviour
 
     private void Start()
     {
-        if (!Input.location.isEnabledByUser)
-        {
-            gameObject.SetActive(false);
-            return;
-        }
-
-        Input.location.Start();
-        StartCoroutine(TrackLocation());
+        if (!Permission.HasUserAuthorizedPermission(Permission.FineLocation))
+            StartCoroutine(WaitForPermission());
+        else
+            StartCoroutine(TrackLocation());
     }
 
     IEnumerator TrackLocation()
     {
+        Input.location.Start();
         yield return WaitForInitialization();
         while(true)
         {
@@ -61,6 +58,15 @@ public class UserGpsDot : MonoBehaviour
 
         if (Input.location.status == LocationServiceStatus.Failed)
             print("Unable to determine device location");
+    }
+
+    IEnumerator WaitForPermission()
+    {
+        Permission.RequestUserPermission(Permission.FineLocation);
+        while (!Input.location.isEnabledByUser)
+            yield return null;
+
+        StartCoroutine(TrackLocation());
     }
 
     Vector3 GeoLocationToVec3(LocationInfo location)

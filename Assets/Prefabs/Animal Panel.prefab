@@ -2149,10 +2149,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4748184313717765969}
-  - component: {fileID: 4748184313717765971}
-  - component: {fileID: 4748184313717765970}
   - component: {fileID: 4748184313717765980}
   - component: {fileID: 1473651379095093061}
+  - component: {fileID: 5143799095158964499}
   - component: {fileID: 6784558207731264101}
   - component: {fileID: 4890710388644377201}
   - component: {fileID: 8780753872009656539}
@@ -2162,7 +2161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4748184313717765969
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2190,44 +2189,6 @@ RectTransform:
   m_AnchoredPosition: {x: 400, y: -175}
   m_SizeDelta: {x: 250, y: 435.12}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &4748184313717765971
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4748184313717765968}
-  m_CullTransparentMesh: 1
---- !u!114 &4748184313717765970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4748184313717765968}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 1
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &4748184313717765980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2251,12 +2212,12 @@ MonoBehaviour:
   lectorBtn: {fileID: 4748184313153029164}
   lectorSource: {fileID: 0}
   winAudioClip: {fileID: 8300000, guid: 5c665b6f22066b34e914a963b53d53b5, type: 3}
-  donateAddress: https://orientarium.lodz.pl/adopcje/
   anims: {fileID: 4890710388644377201}
   followers: {fileID: 0}
   proximityCollectOnly: 0
   mainSection: {fileID: 5800700619170261791}
   quizSection: {fileID: 1473651379095093061}
+  donateSection: {fileID: 5143799095158964499}
 --- !u!114 &1473651379095093061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2284,6 +2245,20 @@ MonoBehaviour:
   badClip: {fileID: 8300000, guid: a22ab73c06360b14a9203de7ac2f7aa2, type: 3}
   okColor: {r: 0.5686275, g: 1, b: 0.49803922, a: 1}
   badColor: {r: 1, g: 0.63529414, b: 0.49411765, a: 1}
+--- !u!114 &5143799095158964499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4748184313717765968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4246647a22816ae40a5f213b316d0286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  donateSection: {fileID: 5219946141318693844}
+  donateBtn: {fileID: 1058482815035581548}
 --- !u!114 &6784558207731264101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2570,7 +2545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6135126180424555200}
   m_Layer: 5
-  m_Name: QuizView (1)
+  m_Name: DonateView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2928,6 +2903,7 @@ GameObject:
   - component: {fileID: 7180560027592332748}
   - component: {fileID: 4571415227669420574}
   - component: {fileID: 1058482815035581548}
+  - component: {fileID: 5885790620045644023}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -3037,6 +3013,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5885790620045644023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8186589370154781255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c703c7dab1e4424ebfd722cfe93bde1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: https://orientarium.lodz.pl/adopcje/
+  button: {fileID: 1058482815035581548}
 --- !u!1 &8213742073707802324
 GameObject:
   m_ObjectHideFlags: 0

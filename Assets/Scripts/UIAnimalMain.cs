@@ -17,13 +17,13 @@ public class UIAnimalMain : MonoBehaviour
     public AudioSource lectorSource;
     public AudioClip winAudioClip;
 
-    public string donateAddress;
     public PanelAnims anims;
     public Followers followers;
     public bool proximityCollectOnly;
 
     public GameObject mainSection;
     public UiAnimalQuiz quizSection;
+    public UiAnimalDonate donateSection;
 
     AnimalPen pen;
     AnimalContext context => pen.context;
@@ -35,6 +35,7 @@ public class UIAnimalMain : MonoBehaviour
         lectorBtn.onClick.AddListener(LectorBtnClicked);
         visitedToggle.onValueChanged.AddListener(OnQuizToggleToggled);
         quizSection.onClose += OnQuizClosed;
+        donateSection.onClose += OnDonateClosed;
     }
 
     private void Update()
@@ -82,13 +83,20 @@ public class UIAnimalMain : MonoBehaviour
 
     void DonateBtnClicked()
     {
-        Application.OpenURL(donateAddress);
+        mainSection.SetActive(false);
+        donateSection.Open();
     }
 
     void LectorBtnClicked()
     {
         lectorSource.clip = pen.voiceClip;
         lectorSource.Play();
+    }
+
+    void OnQuizToggleToggled(bool newValue)
+    {
+        mainSection.SetActive(false);
+        quizSection.Open(pen.question);
     }
 
     void OnQuizClosed(bool success)
@@ -103,9 +111,8 @@ public class UIAnimalMain : MonoBehaviour
         }
     }
 
-    void OnQuizToggleToggled(bool newValue)
+    void OnDonateClosed()
     {
-        mainSection.SetActive(false);
-        quizSection.Open(pen.question);
+        mainSection.SetActive(true);
     }
 }
