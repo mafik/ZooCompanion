@@ -621,29 +621,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2497110603169986036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7342399740523610648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1080, y: 1920}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
 --- !u!1001 &2920281978433040202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -651,18 +628,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 36639862}
     m_Modifications:
-    - target: {fileID: 2920281978155152128, guid: bae75658bfbf48d4ca7fbfbbebaa90fa, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -93
-      objectReference: {fileID: 0}
-    - target: {fileID: 2920281978155152128, guid: bae75658bfbf48d4ca7fbfbbebaa90fa, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 231
-      objectReference: {fileID: 0}
-    - target: {fileID: 2920281978155152128, guid: bae75658bfbf48d4ca7fbfbbebaa90fa, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.2756693
-      objectReference: {fileID: 0}
     - target: {fileID: 2920281979518061010, guid: bae75658bfbf48d4ca7fbfbbebaa90fa, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -769,46 +734,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec157f43fb83de47a5a3ae7e2b0dc71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!223 &3286605001601768081
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7342399740523610648}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &3809338079383614998
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7342399740523610648}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &4748184312183811796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -827,10 +752,6 @@ PrefabInstance:
     - target: {fileID: 4748184313717765968, guid: a87acb10fc98a094987b648341b772b2, type: 3}
       propertyPath: m_Name
       value: Animal Panel
-      objectReference: {fileID: 0}
-    - target: {fileID: 4748184313717765968, guid: a87acb10fc98a094987b648341b772b2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4748184313717765969, guid: a87acb10fc98a094987b648341b772b2, type: 3}
       propertyPath: m_Pivot.x
@@ -926,23 +847,6 @@ PrefabInstance:
       objectReference: {fileID: 6751001081971410520}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a87acb10fc98a094987b648341b772b2, type: 3}
---- !u!114 &4993952943509729657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7342399740523610648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!1001 &6751001081971410519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1033,22 +937,3 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 278520021794112963, guid: 2f06c942aa6534b439bf0984effad0f3, type: 3}
   m_PrefabInstance: {fileID: 6751001081971410519}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7342399740523610648
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3809338079383614998}
-  - component: {fileID: 3286605001601768081}
-  - component: {fileID: 2497110603169986036}
-  - component: {fileID: 4993952943509729657}
-  m_Layer: 5
-  m_Name: CanvasScreenspace
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
