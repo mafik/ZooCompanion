@@ -1773,6 +1773,7 @@ MonoBehaviour:
   winAudioClip: {fileID: 8300000, guid: 5c665b6f22066b34e914a963b53d53b5, type: 3}
   donateAddress: https://orientarium.lodz.pl/adopcje/
   anims: {fileID: 4890710388644377201}
+  followers: {fileID: 0}
 --- !u!114 &6784558207731264101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2005,7 +2006,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 10, y: -130}
-  m_SizeDelta: {x: -20, y: 34.49}
+  m_SizeDelta: {x: -113.35, y: 34.49}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &4748184313918335914
 CanvasRenderer:
@@ -2039,9 +2040,9 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 46f4d5a52dd920e62985edd9f7af9d7c, type: 3}
     m_FontSize: 26
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 49
+    m_MaxSize: 26
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
