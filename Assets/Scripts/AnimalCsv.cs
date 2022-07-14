@@ -13,6 +13,13 @@ public class AnimalContext
     public Sprite endangermentSprite;
 }
 
+public class Question
+{
+    public string question;
+    public string[] answers;
+    public int answerId;
+}
+
 [Serializable]
 class EndangermentClasses
 {
@@ -34,7 +41,7 @@ public class AnimalCsv : MonoBehaviour
             namesToSprites.Add(img.key, img.classPicture);
     }
 
-    static public AnimalContext Parse(TextAsset textAsset)
+    static public AnimalContext ParseAnimal(TextAsset textAsset)
     {
         string text = textAsset.text;
         string[] lines = text.Split(';');
@@ -48,6 +55,29 @@ public class AnimalCsv : MonoBehaviour
             description = lines[2],
             endangermentSprite = namesToSprites[lines[3]],
             outsideLink = lines[4]
+        };
+    }
+
+    static public Question ParseQuestion(TextAsset textAsset)
+    {
+        if (textAsset == null)
+            return null;
+
+        string text = textAsset.text;
+        string[] lines = text.Split(';');
+        for (int i = 0; i < lines.Length; ++i)
+            lines[i] = lines[i].Trim();
+
+        return new Question()
+        {
+            question = lines[0],
+            answers = new string[]
+            {
+                lines[1],
+                lines[2],
+                lines[3],
+            },
+            answerId = int.Parse(lines[4])
         };
     }
 }

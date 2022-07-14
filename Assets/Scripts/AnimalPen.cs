@@ -5,6 +5,7 @@ public class AnimalPen : MonoBehaviour
 {
     public Transform panelOpenPosition;
     public TextAsset rawAnimalData;
+    public TextAsset rawQuestionData;
     public Sprite sprite;
     public Sprite map;
     public LineRenderer lr;
@@ -14,8 +15,12 @@ public class AnimalPen : MonoBehaviour
     [HideInInspector]
     public AnimalContext context;
 
+    [HideInInspector]
+    public Question question;
+
     private void Start()
     {
-        context = AnimalCsv.Parse(rawAnimalData);
+        context = AnimalCsv.ParseAnimal(rawAnimalData);
+        question = AnimalCsv.ParseQuestion(rawQuestionData);
     }
 }
