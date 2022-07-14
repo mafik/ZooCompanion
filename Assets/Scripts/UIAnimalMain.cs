@@ -16,9 +16,11 @@ public class UIAnimalMain : MonoBehaviour
     public Button lectorBtn;
     public AudioSource lectorSource;
     public AudioClip winAudioClip;
+
     public string donateAddress;
     public PanelAnims anims;
     public Followers followers;
+    public bool proximityCollectOnly;
 
     AnimalPen pen;
     AnimalContext context => pen.context;
@@ -29,6 +31,24 @@ public class UIAnimalMain : MonoBehaviour
         donateBtn.onClick.AddListener(DonateBtnClicked);
         lectorBtn.onClick.AddListener(LectorBtnClicked);
         visitedToggle.onValueChanged.AddListener(OnVisitedToggleToggled);
+    }
+
+    private void Update()
+    {
+        bool ok;
+
+        if (followers.followers.Contains(pen.animalMesh))
+            ok = false;
+        else if (!proximityCollectOnly)
+            ok = true;
+        else
+        {
+            Vector3 target = followers.center.position;
+            Vector3 follower = pen.animalMesh.transform.position;
+            ok = Vector3.Distance(target, follower) < 1.5f;
+        }
+
+        visitedToggle.interactable = ok;
     }
 
     public void Open(AnimalPen pen)
