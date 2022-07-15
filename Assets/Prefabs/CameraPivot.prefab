@@ -525,6 +525,8 @@ MonoBehaviour:
   scrollRect: {fileID: 0}
   minPoint: {fileID: 0}
   maxPoint: {fileID: 0}
+  followTarget: {fileID: 0}
+  mainUi: {fileID: 0}
 --- !u!114 &607826425536617840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,10 +545,10 @@ MonoBehaviour:
     m_Bits: 1
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
-  antialiasingMode: 0
+  antialiasingMode: 3
   temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
+    jitterSpread: 1
+    sharpness: 0.18
     stationaryBlending: 0.95
     motionBlending: 0.85
   subpixelMorphologicalAntialiasing:
