@@ -1357,7 +1357,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2920281978155152128}
-  - component: {fileID: 2920281978155152129}
   - component: {fileID: 2807385188997956285}
   m_Layer: 0
   m_Name: User
@@ -1381,20 +1380,6 @@ Transform:
   m_Father: {fileID: 2920281979518061010}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2920281978155152129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2920281978155152131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a54c329c22df104c9c2ff6b2cb2f4b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  corner1: {fileID: 2920281977724537592}
-  corner2: {fileID: 2920281977921005603}
 --- !u!114 &2807385188997956285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1655,6 +1640,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2920281979518061010}
+  - component: {fileID: 6768736070936725533}
   m_Layer: 5
   m_Name: Map
   m_TagString: Untagged
@@ -1701,6 +1687,21 @@ RectTransform:
   m_AnchoredPosition: {x: -1280, y: 1087.5}
   m_SizeDelta: {x: 1026, y: 870}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &6768736070936725533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920281979518061021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a54c329c22df104c9c2ff6b2cb2f4b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2920281978155152128}
+  corner1: {fileID: 2920281977724537592}
+  corner2: {fileID: 2920281977921005603}
 --- !u!1 &3185645501557940051
 GameObject:
   m_ObjectHideFlags: 0

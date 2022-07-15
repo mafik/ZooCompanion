@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Android;
 
@@ -9,12 +8,14 @@ public class UserGpsDot : MonoBehaviour
     float avgLocationDelay = 5;
     Coroutine moveCoroutine;
 
+    public Transform target;
     public Transform corner1;
     public Transform corner2;
 
     private void Start()
     {
-        if (!Permission.HasUserAuthorizedPermission(Permission.FineLocation))
+        if (!Permission.HasUserAuthorizedPermission(Permission.FineLocation) ||
+            !Input.location.isEnabledByUser)
             StartCoroutine(WaitForPermission());
         else
             StartCoroutine(TrackLocation());
@@ -22,6 +23,7 @@ public class UserGpsDot : MonoBehaviour
 
     IEnumerator TrackLocation()
     {
+        target.gameObject.SetActive(true);
         Input.location.Start();
         yield return WaitForInitialization();
         while(true)
@@ -42,11 +44,11 @@ public class UserGpsDot : MonoBehaviour
     {
         float t = 0;
         Vector3 newPos = GeoLocationToVec3(location);
-        Vector3 oldPos = transform.position;
+        Vector3 oldPos = target.position;
         while (t != 1)
         {
             t = Mathf.MoveTowards(t, 1, Time.deltaTime / avgLocationDelay);
-            transform.position = Vector3.Lerp(oldPos, newPos, t);
+            target.position = Vector3.Lerp(oldPos, newPos, t);
             yield return null;
         }
     }
@@ -62,6 +64,7 @@ public class UserGpsDot : MonoBehaviour
 
     IEnumerator WaitForPermission()
     {
+        target.gameObject.SetActive(false);
         Permission.RequestUserPermission(Permission.FineLocation);
         while (!Input.location.isEnabledByUser)
             yield return null;
