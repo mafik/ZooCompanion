@@ -9,6 +9,7 @@ public class UiAnimalDonate : MonoBehaviour
     public GameObject donateSection;
     public Button donateBtn;
     public Action onClose;
+    public Text hintText;
 
     private void Awake()
     {
@@ -21,9 +22,10 @@ public class UiAnimalDonate : MonoBehaviour
             Close();
     }
 
-    public void Open()
+    public void Open(string hint)
     {
         donateSection.SetActive(true);
+        hintText.text = hint;
     }
 
     void Close()

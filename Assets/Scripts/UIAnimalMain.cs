@@ -84,7 +84,7 @@ public class UIAnimalMain : MonoBehaviour
     void DonateBtnClicked()
     {
         mainSection.SetActive(false);
-        donateSection.Open();
+        donateSection.Open(pen.hintData.text);
     }
 
     void LectorBtnClicked()

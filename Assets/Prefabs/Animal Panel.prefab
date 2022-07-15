@@ -2259,6 +2259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   donateSection: {fileID: 5219946141318693844}
   donateBtn: {fileID: 1058482815035581548}
+  hintText: {fileID: 5816440711223086485}
 --- !u!114 &6784558207731264101
 MonoBehaviour:
   m_ObjectHideFlags: 0

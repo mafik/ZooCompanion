@@ -6,6 +6,7 @@ public class AnimalPen : MonoBehaviour
 {
     public Transform panelOpenPosition;
     public TextAsset rawAnimalData;
+    public TextAsset hintData;
     public TextAsset rawQuestionData;
     public Sprite sprite;
     public Sprite map;
