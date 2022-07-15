@@ -66,6 +66,9 @@ public class ViewCenterer : MonoBehaviour
         Vector3 scale = maxPoint.position - minPoint.position;
         Vector3 posRelative = pos - minPoint.position;
 
-        return new Vector2(posRelative.x / scale.x, posRelative.z / scale.z);
+        Vector2 result = new Vector2(posRelative.x / scale.x, posRelative.z / scale.z);
+        result.x = Mathf.Clamp01(result.x);
+        result.y = Mathf.Clamp01(result.y);
+        return result;
     }
 }

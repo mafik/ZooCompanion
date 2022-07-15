@@ -31,6 +31,8 @@ public class UserGpsDot : MonoBehaviour
             yield return new WaitForSeconds(1);
             if (Input.location.lastData.timestamp == lastTimestamp) 
                 continue;
+            //if (Input.location.lastData.horizontalAccuracy < 50)
+            //    continue;
 
             lastTimestamp = Input.location.lastData.timestamp;
             if (moveCoroutine != null)
@@ -66,7 +68,8 @@ public class UserGpsDot : MonoBehaviour
     {
         target.gameObject.SetActive(false);
         Permission.RequestUserPermission(Permission.FineLocation);
-        while (!Input.location.isEnabledByUser)
+        while (!Input.location.isEnabledByUser &&
+            !Permission.HasUserAuthorizedPermission(Permission.FineLocation))
             yield return null;
 
         StartCoroutine(TrackLocation());
